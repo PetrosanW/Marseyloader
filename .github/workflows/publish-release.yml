@@ -3,12 +3,12 @@ name: Publish Release
 on:
   push:
     tags:
-    - 'v*'
+      - 'v*'
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: Mirai
+    runs-on: self-hosted
     
     steps:
     - name: Checkout code
